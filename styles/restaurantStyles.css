@@ -1,0 +1,91 @@
+body {
+    background: #D9CFC1;
+    font-family: 'Lucida Bright';
+}
+.container {
+    margin-bottom: 120px;
+}
+.jumbotron {
+    margin-bottom: 0px;
+    background-image: url(../images/jumbotronBackground.png);
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+}
+.jumbotron h1{
+    font-family: 'Lobster Two', cursive;
+    font-size: 7.1em;
+    text-align: center;
+    margin-top: 65px;
+    color: #BA3F1D;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.jumbotron h2{
+    font-family: 'Lucida Bright';
+    font-size: 2.1em;
+    text-align: left; 
+    color: #BA3F1D;
+    margin-left: 110px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+/* ==============================nav bar================================ */
+nav {
+    /* border-top: thin  solid; */
+    /* border-bottom: thin #495867 solid; */
+    padding-top: 10px;
+    padding-bottom: 8px;
+    margin-left: 60px;
+}
+nav .btn {
+    background-color: #495867;
+    width: 31.7%; 
+    height: 50px;
+    margin-bottom: 2px;
+}
+
+img {
+    border: 10px solid #495867;
+}
+
+/*==============================pseudo code=========================== */
+  
+a:link {
+    color: #D9CFC1;
+    font-size: 1.3em;
+    text-decoration:underline
+}
+
+a:visited {
+    color: rgb(186, 245, 242);
+} 
+
+a:hover {
+    /* text-decoration: none; */
+    font-weight: bold;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+/* ================================carousel================================= */
+
+.carousel {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* ================================footer===================================== */
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:  #495867;
+    color: #D9CFC1;
+    text-align: center;
+    padding-top: 10px;
+}
+/* ====================================================== */
+
