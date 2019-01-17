@@ -5,6 +5,12 @@ body {
 .container {
     margin-bottom: 120px;
 }
+/* information placed on index.html */
+#infoText {
+    font-family: 'Lobster Two', cursive;
+    font-size: 1.8em;
+    text-align: center; 
+}
 .jumbotron {
     margin-bottom: 0px;
     background-image: url(../images/jumbotronBackground.png);
@@ -19,7 +25,6 @@ body {
     color: #BA3F1D;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-
 .jumbotron h2{
     font-family: 'Lucida Bright';
     font-size: 2.1em;
@@ -42,32 +47,25 @@ nav .btn {
     height: 50px;
     margin-bottom: 2px;
 }
-
 img {
     border: 10px solid #495867;
 }
-
-/*==============================pseudo code=========================== */
-  
+/*==============================pseudo code=========================== */  
 a:link {
     color: #D9CFC1;
     font-size: 1.3em;
     text-decoration:underline
 }
-
 a:visited {
     color: rgb(186, 245, 242);
 } 
-
 a:hover {
     /* text-decoration: none; */
     font-weight: bold;
 }
-
 a:active {
     text-decoration: none;
 }
-
 /* ================================carousel================================= */
 
 .carousel {
@@ -75,17 +73,15 @@ a:active {
     margin-top: 50px;
     margin-bottom: 50px;
 }
-
 /* ================================footer===================================== */
 .footer {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color:  #495867;
+    background-color: #495867;
     color: #D9CFC1;
     text-align: center;
     padding-top: 10px;
 }
-/* ====================================================== */
 
