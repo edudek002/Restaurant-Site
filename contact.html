@@ -14,49 +14,6 @@
         <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-        <script>
-            function clearErrors() {    
-                for (var i = 0; i < document.forms["contactUs"].elements.length; i++) {
-                    if (document.forms["contactUs"].elements[i]
-                    .parentElement.className.indexOf("has-") != -1) {
-                        
-                        document.forms["contactUs"].elements[i]
-                        .parentElement.className = "form-group";
-                    }
-                }    
-            } 
-            function validateForm() {
-                clearErrors(); 
-                var x = document.forms["contactUs"]["name"].value;
-                var y = document.forms["contactUs"]["email"].value;
-                var z = document.forms["contactUs"]["phone"].value;
-                var re = /\S+@\S+\.\S+/;
-                var myemail= re.test(y); //test if y entry is in the email form
-                // If x is a Number or empty space
-                if (x == ""||isNaN(x)==false) {
-                    alert("Please enter your name");
-                    document.forms["contactUs"]["name"]
-                     .parentElement.className = "form-group has-error";   
-                } 
-                //If y is not in an Email form
-                else if (myemail==false) { 
-                    alert("Please enter valid email");
-                    document.forms["contactUs"]["email"]
-                        .parentElement.className = "form-group has-error"; 
-                    return false;    
-                }
-                // If z is Not a Number or is an empty space
-                else if (isNaN(z)||z===0||z==="") {
-                    alert("Please enter your phone number (digits only)");
-                    document.forms["contactUs"]["phone"]
-                        .parentElement.className = "form-group has-error"
-                    return false;
-                }
-                else {
-                    alert("The information you entered is valid");
-                }
-            }
-        </script>
         <style>
         /*================color scheme from https://coolors.co ====================
             #CE796B - pinkish, rgb(206, 121, 107)
@@ -282,6 +239,50 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+        <script>
+            function clearErrors() {    
+                for (var i = 0; i < document.forms["contactUs"].elements.length; i++) {
+                    if (document.forms["contactUs"].elements[i]
+                    .parentElement.className.indexOf("has-") != -1) {
+                        
+                        document.forms["contactUs"].elements[i]
+                        .parentElement.className = "form-group";
+                    }
+                }    
+            } 
+            function validateForm() {
+                clearErrors(); 
+                var x = document.forms["contactUs"]["name"].value;
+                var y = document.forms["contactUs"]["email"].value;
+                var z = document.forms["contactUs"]["phone"].value;
+                var re = /\S+@\S+\.\S+/;
+                var myemail= re.test(y); //test if y entry is in the email form
+                // If x is a Number or empty space
+                if (x == ""||isNaN(x)==false) {
+                    alert("Please enter your name");
+                    document.forms["contactUs"]["name"]
+                        .parentElement.className = "form-group has-error"; 
+                    return false; 
+                } 
+                //If y is not in an Email form
+                else if (myemail==false) { 
+                    alert("Please enter valid email");
+                    document.forms["contactUs"]["email"]
+                        .parentElement.className = "form-group has-error"; 
+                    return false;    
+                }
+                // If z is Not a Number or is an empty space
+                else if (isNaN(z)||z===0||z==="") {
+                    alert("Please enter your phone number (digits only)");
+                    document.forms["contactUs"]["phone"]
+                        .parentElement.className = "form-group has-error"
+                    return false;
+                }
+                else {
+                    alert("The information you entered is valid");
+                }
+            }
+        </script>
         
     </body> 
 </html>
